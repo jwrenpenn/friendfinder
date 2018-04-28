@@ -12,44 +12,32 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container">
+		
+      <div class="jumbotron">
+        <h1 class=""><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
+        <hr>
+        <h2 class="">Answer a few basic questions. </h2>
+        <h2 class="">Then find the friend with the greatest compatibility!</h2>
+        <br>
+  
+        <div class="">
+          <a href="/survey"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>	
+        </div>
+  
+      </div>
+  
+        <footer class="footer">
+          <div class="container">
+              <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/jrwenpenn/friendfinder">GitHub Repo</a></p>
+          </div>
+        </footer>
+  
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
-  <script type="text/javascript">
-
-    function runTableQuery() {
-      var currentURL = window.location.origin;
-
-        $.ajax({url: currentURL + "/api/tables", method: "GET"})
-
-          .done(function(tableData){
-
-            console.log("--------------------------------------");
-            console.log("URL: " + currentURL + "/api/tables");
-            console.log("--------------------------------------");
-            console.log(tableData);
-            console.log("--------------------------------------");
-
-            for (var i = 0; i < tabeData.length; i++) {
-              console.log(tableData);
-
-                var tableSection = $("<div>");
-                  tableSection.addClass('well');
-                  tableSection.attr('id', 'tablewell-' + i+ 1);
-                  $("#tableSection").append(tableSection);
-
-                  var tableNumber = i + 1;
-
-                  $("#tableWell-" + i+1).append('<h2><span class="-labelprimary">' +
-                  tableNumber + "</span> | " + tableData[i].customerID + "<h2>");
-            }
-          });
-      runTableQuery();
-    }
-  
-  </script>
 </html>
