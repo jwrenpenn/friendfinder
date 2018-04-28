@@ -45,7 +45,7 @@ var friendsArray = [
 	   ]
 	},
 	{
-	  "name":"A squirrel we like to call Mr. Big.",
+	  "name":"A squirrel that lives in my backyard that I like to call Mr. Big.",
 	  "scores":[
 	     2,
 	     3,
